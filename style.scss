@@ -1,0 +1,14 @@
+@import "font/_font";
+@import "scss/variables";
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@import "scss/index";
