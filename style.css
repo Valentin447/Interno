@@ -115,7 +115,7 @@
 .welcome {
   display: flex;
   align-items: center;
-  background-image: url("/img/background/background0.jpg");
+  background-image: url("img/background/background0.jpg");
   height: 758px;
   border-radius: 75px;
 }
