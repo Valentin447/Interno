@@ -3,7 +3,7 @@
 	font-style: normal;
 	font-weight: normal;
 	src: local('DMSerifDisplay'),
-		url('/fonts/DMSerifDisplay-Regular.ttf'), format('ttf');
+		url('fonts/DMSerifDisplay-Regular.ttf'), format('ttf');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
 	font-style: italic;
 	font-weight: normal;
 	src: local('DMSerifDisplay'),
-		url('/fonts/DMSerifDisplay-Italic.ttf'), format('ttf');
+		url('fonts/DMSerifDisplay-Italic.ttf'), format('ttf');
 }
 
 @font-face {
@@ -19,7 +19,7 @@
 	font-style: normal;
 	font-weight: 400;
 	src: local('Jost'),
-		url('/fonts/Jost-Regular.ttf'), format('ttf');
+		url('fonts/Jost-Regular.ttf'), format('ttf');
 }
 
 @font-face {
@@ -27,7 +27,7 @@
 	font-style: normal;
 	font-weight: 500;
 	src: local('Jost'),
-		url('/fonts/Jost-Medium.ttf'), format('ttf');
+		url('fonts/Jost-Medium.ttf'), format('ttf');
 }
 
 @font-face {
@@ -35,5 +35,5 @@
 	font-style: normal;
 	font-weight: 600;
 	src: local('Jost'),
-		url('/fonts/Jost-SemiBold.ttf'), format('ttf');
+		url('fonts/Jost-SemiBold.ttf'), format('ttf');
 }
