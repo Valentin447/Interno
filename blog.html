@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body class="blog">
     <div class="container">
@@ -45,24 +47,23 @@
           </figcaption>
         </figure>
       </section>
-      <section class="articles blog__articles">
+      <section id="app" class="articles blog__articles">
         <h2 class="articles__heading blog__articles-heading">Articles & News</h2>
-        <div class="articles__list">
-          <article class="post-link">
-            <div class="post-link__label">Kitchan Design</div>
+        <ul class="articles__list">
+          <li v-for="post in posts" :key="post.index" class="post-link">
+            <div class="post-link__label">{{ post.label }}</div>
             <img
               class="post-link__photo"
-              src="img/rooms/Photo6.jpg"
+              :src="post.photoSrc"
               alt="photo"
             />
             <h5 class="post-link__heading">
-              Let's Get Solution For Building Construction Work
+              {{ post.heading }}
             </h5>
             <div class="post-link__bottom">
               <time
                 class="post-link__bottom-time"
-                datetime="2022-12-26"
-                >26 December,2022</time
+                >{{ post.time }}</time
               >
               <button class="post-link__bottom-button">
                 <img
@@ -72,133 +73,8 @@
                 />
               </button>
             </div>
-          </article>
-          <article class="post-link">
-            <div class="post-link__label">Living Design</div>
-            <img
-              class="post-link__photo"
-              src="img/rooms/Photo7.jpg"
-              alt="photo"
-            />
-            <h5 class="post-link__heading">
-              Let's Get Solution For Building Construction Work
-            </h5>
-            <div class="post-link__bottom">
-              <time
-                class="post-link__bottom-time"
-                datetime="2022-12-22"
-                >22 December,2022</time
-              >
-              <button class="post-link__bottom-button">
-                <img
-                  class="post-link__bottom-button-arrow"
-                  src="img/arrow2.svg"
-                  alt="arrow"
-                />
-              </button>
-            </div>
-          </article>
-          <article class="post-link">
-            <div class="post-link__label">Interior Design</div>
-            <img
-              class="post-link__photo"
-              src="img/rooms/Photo8.jpg"
-              alt="photo"
-            />
-            <h5 class="post-link__heading">
-              Let's Get Solution For Building Construction Work
-            </h5>
-            <div class="post-link__bottom">
-              <time
-                class="post-link__bottom-time"
-                datetime="2022-12-25"
-                >25 December,2022</time
-              >
-              <button class="post-link__bottom-button">
-                <img
-                  class="post-link__bottom-button-arrow"
-                  src="img/arrow2.svg"
-                  alt="arrow"
-                />
-              </button>
-            </div>
-          </article>
-          <article class="post-link">
-            <div class="post-link__label">Kitchan Design</div>
-            <img
-              class="post-link__photo"
-              src="img/rooms/Photo6.jpg"
-              alt="photo"
-            />
-            <h5 class="post-link__heading">
-              Let's Get Solution For Building Construction Work
-            </h5>
-            <div class="post-link__bottom">
-              <time
-                class="post-link__bottom-time"
-                datetime="2022-12-26"
-                >26 December,2022</time
-              >
-              <button class="post-link__bottom-button">
-                <img
-                  class="post-link__bottom-button-arrow"
-                  src="img/arrow2.svg"
-                  alt="arrow"
-                />
-              </button>
-            </div>
-          </article>
-          <article class="post-link">
-            <div class="post-link__label">Kitchan Design</div>
-            <img
-              class="post-link__photo"
-              src="img/rooms/Photo6.jpg"
-              alt="photo"
-            />
-            <h5 class="post-link__heading">
-              Let's Get Solution For Building Construction Work
-            </h5>
-            <div class="post-link__bottom">
-              <time
-                class="post-link__bottom-time"
-                datetime="2022-12-26"
-                >26 December,2022</time
-              >
-              <button class="post-link__bottom-button">
-                <img
-                  class="post-link__bottom-button-arrow"
-                  src="img/arrow2.svg"
-                  alt="arrow"
-                />
-              </button>
-            </div>
-          </article>
-          <article class="post-link">
-            <div class="post-link__label">Kitchan Design</div>
-            <img
-              class="post-link__photo"
-              src="img/rooms/Photo6.jpg"
-              alt="photo"
-            />
-            <h5 class="post-link__heading">
-              Let's Get Solution For Building Construction Work
-            </h5>
-            <div class="post-link__bottom">
-              <time
-                class="post-link__bottom-time"
-                datetime="2022-12-26"
-                >26 December,2022</time
-              >
-              <button class="post-link__bottom-button">
-                <img
-                  class="post-link__bottom-button-arrow"
-                  src="img/arrow2.svg"
-                  alt="arrow"
-                />
-              </button>
-            </div>
-          </article>
-        </div>
+          </li>
+        </ul>
         <div class="articles__pagination">
           <button class="articles__pagination-button articles__pagination-button-current">01</button>
           <button class="articles__pagination-button">02</button>
