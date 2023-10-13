@@ -28,7 +28,7 @@
       border-radius: 10px;
       background: $color2;
       cursor: pointer;
-      &:hover{
+      &-selected{
         background: $color3;
         color: #FFF;
       }

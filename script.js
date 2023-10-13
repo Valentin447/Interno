@@ -1,5 +1,3 @@
-"use strict";
-
 const App = {
   data() {
     return {
@@ -42,6 +40,9 @@ const App = {
         },
       ],
     };
+  },
+  components:{
+    post,
   },
 };
 Vue.createApp(App).mount("#app");

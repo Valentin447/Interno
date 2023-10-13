@@ -252,6 +252,7 @@
 .post__main-photo {
   border-radius: 50px;
   margin-bottom: 46px;
+  max-width: 800px;
 }
 .post__info {
   display: flex;
@@ -423,7 +424,7 @@
   background: #F4F0EC;
   cursor: pointer;
 }
-.tags__list-button:hover {
+.tags__list-button-selected {
   background: #292F36;
   color: #FFF;
 }
