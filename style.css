@@ -229,6 +229,106 @@
   background: #fff;
 }
 
+.post {
+  max-width: 800px;
+}
+.post__text-default {
+  color: #4D5053;
+  font-family: "Jost";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+.post__heading {
+  color: #292F36;
+  font-family: "DM Serif Display";
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 1px;
+  margin-bottom: 11px;
+}
+.post__main-photo {
+  border-radius: 50px;
+  margin-bottom: 46px;
+}
+.post__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  color: #4D5053;
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
+}
+.post__tags {
+  list-style: none;
+  display: flex;
+}
+.post__tags-item:not(:last-child)::after {
+  content: "/";
+  margin: 0 5px;
+}
+.post__quotes {
+  margin-top: 35px;
+  margin-bottom: 27px;
+  border-radius: 50px;
+  background: #F4F0EC;
+  height: 267px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #CDA274;
+  color: #CDA274;
+  text-align: center;
+  font-family: "DM Serif Display";
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 400;
+}
+.post__quotes-marks {
+  font-size: 200px;
+  line-height: 50px;
+  transform: rotate(180deg) translate(0, 60px);
+}
+.post__quotes-text {
+  width: 345px;
+}
+.post__content-heading {
+  color: #292F36;
+  font-family: "DM Serif Display";
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.post__content-list {
+  margin-top: 24px;
+}
+.post__content-list-item {
+  margin-bottom: 32px;
+  display: flex;
+}
+.post__content-list-item-count {
+  color: #CDA274;
+  font-family: "DM Serif Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.4px;
+  margin-right: 14px;
+}
+.post__photo2 {
+  border-radius: 50px;
+  margin-bottom: 35px;
+}
+
 .blog__articles {
   margin-bottom: 200px;
 }
@@ -288,6 +388,53 @@
 .articles__pagination-button-current {
   border: 1px solid #F4F0EC;
   background-color: #F4F0EC;
+}
+
+.tags {
+  margin-left: 52px;
+}
+.tags__heading {
+  color: #292F36;
+  font-family: "DM Serif Display";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+}
+.tags__list {
+  margin-top: 24px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 345px;
+  gap: 10px;
+}
+.tags__list-button {
+  padding: 9px 30px;
+  color: #000;
+  text-align: center;
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.36px;
+  border: none;
+  border-radius: 10px;
+  background: #F4F0EC;
+  cursor: pointer;
+}
+.tags__list-button:hover {
+  background: #292F36;
+  color: #FFF;
+}
+
+.blog-details__banner {
+  background-image: url("img/background/background2.jpg");
+  margin-bottom: 200px;
+}
+
+.main-wrap {
+  display: flex;
 }
 
 .welcome {
